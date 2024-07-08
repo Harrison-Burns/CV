@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB-CV</title>
+    <link rel="stylesheet" href="CV CSS.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <!-- Photo section -->
+    <section class="Heading">
+      <div class="Profile-Picture">
+        <img src="https://i.imgur.com/fUZmhjd.jpg" height="150" width="150" alt="Profile Picture">
+      </div>
+
+      <div class="personal-info">
+        <h1>Harrison Burns</h1>
+      </div>
+
+      <div class="personal-contact">
+        <!-- <p>harrisonsburns@gmail.com | Denver, CO | 720-470-2771</p> -->
+        <p>harrisonsburns@gmail.com</p>
+        <p>Denver,CO</p>
+        <p>720-470-2771</p>
+        <p><a href="https:www.linkedin.com/in/harrison-burns-646210a5">Linkedin profile</a> </p>
+      </div>
+    </section>
+  </header>
+
+  <!-- Relevant Education section -->
+  <main>
+  <section>
+    <h2>Education</h2>
+    <table>
+        <thead>
+          <tr>
+            <th>Degree</th>
+            <th>School</th>
+            <th>Date Attended</th>
+            <th>GPA</th>
+            <!-- This is the information in the table above the values -->
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Software Engineering Certificate</td>
+                <td><em>Springboard</em></td>
+                <td>May 2025</td>
+            </tr>
+            <tr>
+                <td>Bachelor of Science in Nursing</td>
+                <td><em>Regis University</em></td>
+                <td>August 2021</td>
+                <td>3.8</td>
+            </tr>
+            <tr>
+                <td>Bachelor of Science in Psychology</td>
+                <td><em>Colorado State University</em></td>
+                <td>May 2018</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td>*Minor in Sociology</td>
+                <td><em>Colorado State University</em></td>
+                <td>May 2018</td>
+            </tr>
+        </tbody>
+      </table>
+        <!-- Section describes relevant education -->
+  </section>
+
+      <!-- Relevant/Useful Job experience -->
+  <section>
+    <h2>Job Experience</h2>
+        <h3>Healthcare Experience</h3>
+        <ul>
+            <li>
+                <h4>Registered Nurse - February 2022 - Present</h4>
+                <ul>
+                    <li>Cardiac Intensive Care RN - <em>UCHealth Anshutz Campus</em> - February 2022 - March 2023</li>
+                    <li>Interventional Radiology RN - <em>UCHealth Anshutz Campus</em> - March 2023 - Present</li>
+                </ul>
+            </li>
+            <li>
+                <h4>Nursing Assistant - June 2018 - February 2022</h4>
+                <ul>
+                    <li>Inpatient - <em>UCHealth Anshutz Campus</em> - Aug. 2018 - February 2022</li>
+                    <li>Home Healthcare - <em>Encompass Health</em> - July 2017 - June 2018</li>
+                    <li>Acute Care - <em>Centre Avenue Health and Rehab Facility</em> - June 2016 - July 2017</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Section focused on Job Experience, this will hopefully start to get filled with more relevant occupations -->
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+        <h3><a href="link to follow">Twitter Clone</a></h3>
+        <h3><a href="link to follow">Lucky Numbers</a></h3>
+        <h3><a href="link to follow">Star Wars</a></h3>
+        <!-- Links and information to follow once projects are complete -->
+  </section>
+
+  <!-- Learned Languages -->
+  <section>
+    <h2>Technologies</h2>
+        <h3>Web Development</h3>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>Javascript</li>
+            <li>Python</li>
+            <!-- I will add more languages as I progress through the program -->
+        </ul>
+      </section>
+
+      <!-- Certifications -->
+  <section>
+    <h2>Certifications/Licensure</h2>
+    <ul>
+        <li>Springboard Software Engineering Certification of Completion - March 2025</li>
+        <li>Registered Nurse <em>Colorado Board of Nursing</em> - RN.1678605</li>
+        <li>Certified ACLS Provider - <em>American Heart Association</em> - eCard Code - 225404933689</li>
+        <li>Certified BLS Provider - <em>American Heart Association</em> - eCard Code - 195504315803</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <!-- Contact Boxes -->
+  <section>
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="user_name" required/>
+      </div>
+
+      <div>
+        <label for="mail">Email:</label>
+        <input type="email"  name="user_email" required/>
+      </div>
+
+      <div>
+        <label for="Company">Organization:</label>
+        <input type="text" name="user_Organization" />
+      </div>
+
+      <div>
+        <label for="Callback number">Callback Number:</label>
+        <input type="tel" name="user_tel#"/>
+      </div>
+
+      <div>
+        <label for="msg">Message:</label>
+        <textarea name="msg" maxlength="250" placeholder="Let me know something about yourself and your company!" cols="50" rows="4"></textarea>
+      </div>
+
+      <div>
+        <button type="reset"> Reset form</button>
+      </div>
+
+      <div>
+        <button type="submit" onclick="alert('Thank you for reaching out!')"> Submit</button>
+      </div>
+    </form>
+  </section>
+      <!--Form is used to get input from interested parties I might add certain inputs -->
+</footer>
+        <!-- as I gain more understanding of what I am looking for from a career-->
+</body>
+</html>

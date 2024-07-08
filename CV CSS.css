@@ -1,0 +1,150 @@
+ * {
+        box-sizing: border-box;  
+}  
+
+body {
+    font-family: "Lato", sans-serif;/* Setting the whole document font to Lato (with a sans-serif backup) for professionalism */
+    font-weight: 400;
+    font-style: normal;
+    font-size:16px;
+    line-height: 2;
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid #581600
+}
+
+/* Header Section */
+header {
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+@media (min-width: 786px) {
+    header {
+        align-items:normal;
+    }
+}
+/* This allows the images to be brought back to a more horizontal orientation */
+
+.Profile-Picture img{
+    display: flex;
+    align-items:flex-start;
+    height:200px;
+    width:200px;
+    display:block; /*Places the img into the the div*/
+    border: 1px solid #005842;
+    border-radius: 100%; /*rounds picture*/
+}
+
+@media (min-width: 768px) {
+    header .Heading {
+        display:flex;
+        justify-content: space-evenly; /* seperates content*/
+        height:20rem;
+    }
+}
+
+/* Profile Picture */
+@media (min-width: 768px) {
+    .Profile-Picture img{
+        align-items:flex-start; /* Setting the picture to the upper left axis */
+    } 
+}
+
+/* Header Text */
+.Heading .personal-info {
+    display:flex;
+    align-self:center;
+}
+
+.personal-contact {
+    display:flex;
+    flex-direction:column; /*this keeps the info more reasonably condensed*/
+    align-self: flex-end
+
+}
+
+.personal-contact p {
+    margin:0rem; /*Decrease margins for spacing*/
+}
+
+header p {
+    text-align: center;
+}
+ /* Plan to play with alignment at a later date, when I become more proficient at CSS*/
+
+/* Main and Footer sections */
+Main section, footer section{
+    margin:2rem;
+    border-top: 2px solid #581600;
+}
+
+/* Headings */
+h1 {
+    color:#005842;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px #06b186;
+}
+
+h2 {
+    color: #581600;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px #774d3f;
+    font-size: 1.5rem
+}
+
+h3 {
+    color: #2f806f;
+    font-size: 1.3rem;
+}
+
+h1, h2, h3 {
+    padding-bottom: 0rem;
+}
+
+/* Anchors with no text decoration and a non-default color */
+a {
+    text-decoration: none;
+    color: #d89736;
+    transition:cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+}
+
+a:hover {
+    color:#005842
+}
+
+form textarea {
+    padding: .1rem .5rem;
+    border:#581600 outset;
+    outline: none;
+    width: 350px;
+    height: 75px;
+}
+
+/* form button setup */
+form button {
+    color:#005842;
+    background-color: rgb(255, 255, 255);
+    padding: .1rem .5rem;
+    transition:ease-in 1s;
+}
+
+form button:hover {
+    color:white;
+    background: #005842;
+}
+
+/* Form font color */
+form label {
+    color: #005842
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    align-items:center
+}
+
+ /* Not sure about the color theme, might change that later */
